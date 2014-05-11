@@ -4,7 +4,12 @@ data <- loadData()
 
 png("plot4.png")
 
+# Create a 2x2 plot area
 par(mfrow = c(2, 2))
+
+# Set scale down a bit to get
+# the y axis to draw all
+# labels on tic marks
 par(cex = 0.80)
 
 plot(data$DateTime,
